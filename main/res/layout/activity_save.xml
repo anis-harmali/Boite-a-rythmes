@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsound"
+    tools:context=".Save">
+
+    <Button
+        android:id="@+id/buttonRetourSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retour"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Sauvegarder"
+            android:textColor="#FFC700"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="97dp"
+        android:background="@drawable/textview_border">
+
+        <EditText
+            android:id="@+id/fileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textColor="#00FF0D"
+            android:textSize="30dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="120dp">
+
+        <Button
+            android:id="@+id/buttonSaveV"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Valider"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <Button
+            android:id="@+id/buttonSaveA"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="Annuler"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

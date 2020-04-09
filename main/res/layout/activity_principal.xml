@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/backimage"
+    tools:context="com.example.rythmik.Principal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/button1"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="BPM :"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bpmNumber"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:text="120"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonBpmPlus"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="+" />
+
+                    <Button
+                        android:id="@+id/buttonBpmMinus"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="-" />
+
+                    <Button
+                        android:id="@+id/buttonReset"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="RESET" />
+
+                    <Button
+                        android:id="@+id/buttonStyle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="STYLE" />
+
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/TableLayoutPrincipal">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/Button10"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/maracas"
+                                    android:scaleType="fitCenter"
+                                    android:textColor="#fff" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+                                <ToggleButton
+                                    android:id="@+id/toggleButton16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton110"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton111"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton112"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton113"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+                                <ToggleButton
+                                    android:id="@+id/toggleButton114"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton115"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton116"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton117"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton118"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#8000FF00"
+                                    android:layout_marginRight="10dp"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton119"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton120"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/Button20"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/drum"
+                                    android:scaleType="fitCenter"
+                                    android:textColor="#fff" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton210"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton211"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton212"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton213"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton214"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton215"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton216"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton217"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton218"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#8000FF00"
+                                    android:layout_marginRight="10dp"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton219"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton220"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/Button30"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/clap"
+                                    android:scaleType="fitCenter"
+                                    android:textColor="#fff" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton38"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton39"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton310"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton311"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton312"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton313"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+                                <ToggleButton
+                                    android:id="@+id/toggleButton314"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton315"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton316"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton317"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton318"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#8000FF00"
+                                    android:layout_marginRight="10dp"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton319"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton320"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/Button40"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/cymbale"
+                                    android:scaleType="fitCenter"
+                                    android:textColor="#fff" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton41"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton42"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton43"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton44"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton45"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton46"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton47"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton48"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton49"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton410"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton411"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton412"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton413"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+                                <ToggleButton
+                                    android:id="@+id/toggleButton414"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton415"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton416"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton417"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton418"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#8000FF00"
+                                    android:layout_marginRight="10dp"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton419"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton420"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/Button50"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/drum"
+                                    android:scaleType="fitCenter"
+                                    android:textColor="#fff" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton51"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton52"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton53"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton54"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton55"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton56"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton57"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton58"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton59"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton510"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton511"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton512"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton513"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+                                <ToggleButton
+                                    android:id="@+id/toggleButton514"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton515"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton516"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton517"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton518"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#8000FF00"
+                                    android:layout_marginRight="10dp"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton519"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton520"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/Button60"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/clap"
+                                    android:scaleType="fitCenter"
+                                    android:textColor="#fff" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton61"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton62"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton63"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton64"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton65"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton66"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton67"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton68"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton69"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton610"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton611"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FD0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton612"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton613"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+                                <ToggleButton
+                                    android:id="@+id/toggleButton614"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X"/>
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton615"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton616"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton617"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#8000FF00"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton618"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#8000FF00"
+                                    android:layout_marginRight="10dp"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton619"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton620"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#80FF0000"
+                                    android:textOff=""
+                                    android:textOn="X" />
+
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+
+                    </HorizontalScrollView>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ToggleButton
+                        android:id="@+id/playButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:textOff="PLAY"
+                        android:textOn="PAUSE"
+                        app:srcCompat="@android:drawable/ic_media_play" />
+
+
+                    <Button
+                        android:id="@+id/buttonSauv_principal"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="SAUV." />
+
+                    <Button
+                        android:id="@+id/buttonCharg_principal"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="CHARG." />
+
+                    <TextView
+                        android:id="@+id/Mesure"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="MESURE :"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/MesureNumber"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:inputType="number"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/buttonMesurePlus"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="+" />
+
+                    <Button
+                        android:id="@+id/buttonMesureMinus"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
+

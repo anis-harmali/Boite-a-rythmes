@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsound"
+    tools:context=".StylePopup">
+
+    <Button
+        android:id="@+id/buttonRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retour"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Choix du Style"
+            android:textColor="#FFC700"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="30dp">
+
+        <Button
+            android:id="@+id/buttonNormal"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Normal"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <Button
+            android:id="@+id/buttonJazz"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Jazz"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <Button
+            android:id="@+id/buttonRock"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Rock"
+            tools:layout_editor_absoluteX="380dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <Button
+            android:id="@+id/buttonSalsa"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Salsa"
+            tools:layout_editor_absoluteX="547dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <Button
+            android:id="@+id/buttonTech"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="Techno"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="159dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

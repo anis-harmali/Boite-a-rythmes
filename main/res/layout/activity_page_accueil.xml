@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rythmik.PageAccueil"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/r"
+        android:layout_margin="50dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/ButtonNouv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nouveau"
+        android:textColor="@android:color/holo_red_dark"
+        android:width="100dp"
+        android:gravity="center"
+        android:textSize="50dp"
+        />
+
+    <Button
+        android:id="@+id/ButtonCharg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charger"
+        android:textColor="@android:color/holo_red_dark"
+        android:width="100dp"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

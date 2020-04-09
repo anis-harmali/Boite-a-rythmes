@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsound"
+    tools:context=".JazzInstrument">
+
+    <Button
+        android:id="@+id/buttonJazzRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retour"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ChoixInstruJazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:text="Choisir Instrument"
+            android:textColor="#FFC700"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/StyleJazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="55dp"
+            android:text="Style Jazz"
+            android:textColor="#FF7700"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="145dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Jazz1"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="Clap 1"
+                    tools:layout_editor_absoluteX="214dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+            </TableRow>
+
+            <TableRow
+            android:layout_width="250dp"
+            android:layout_height="90dp">
+
+            <Button
+                android:id="@+id/Jazz2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Clap 2"
+                tools:layout_editor_absoluteX="214dp"
+                tools:layout_editor_absoluteY="159dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="250dp"
+                android:layout_height="90dp">
+
+                <Button
+                    android:id="@+id/Jazz3"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="Cymable"
+                    tools:layout_editor_absoluteX="214dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="250dp"
+                android:layout_height="90dp">
+
+                <Button
+                    android:id="@+id/Jazz4"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="Tambour 1"
+                    tools:layout_editor_absoluteX="214dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="250dp"
+                android:layout_height="90dp">
+
+                <Button
+                    android:id="@+id/Jazz5"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="Tambour 2"
+                    tools:layout_editor_absoluteX="214dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="250dp"
+                android:layout_height="90dp">
+
+                <Button
+                    android:id="@+id/Jazz6"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="Maracas 1"
+                    tools:layout_editor_absoluteX="214dp"
+                    tools:layout_editor_absoluteY="159dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
