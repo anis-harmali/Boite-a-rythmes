@@ -5,6 +5,9 @@ The purpose of this application: "Rythmik" is to offer users a way to express th
 This application was build with Android Studio.
 
 How to get it on your phone:
-1-> Dowlnload the APK file 
+
+1-> Dowlnload the APK file
+
 2-> unable the installation of apps from unknown sources in your android settings
+
 3-> Enjoy !
